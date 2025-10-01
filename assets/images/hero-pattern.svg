@@ -1,0 +1,11 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Motif géométrique abstrait</title>
+  <desc id="desc">Motif de formes géométriques bleues translucides disposées en diagonale.</desc>
+  <rect width="480" height="480" fill="#0a4a7c"/>
+  <g opacity="0.2">
+    <circle cx="120" cy="120" r="96" fill="#0d6efd"/>
+    <circle cx="360" cy="320" r="132" fill="#1f2937"/>
+    <rect x="220" y="40" width="280" height="280" rx="70" fill="#38bdf8" transform="rotate(35 360 180)"/>
+    <rect x="-40" y="240" width="260" height="260" rx="56" fill="#475569" transform="rotate(-25 90 370)"/>
+  </g>
+</svg>
