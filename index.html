@@ -4,40 +4,37 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Comparatif des cabinets comptables en ligne | Comptable Pro</title>
+    <title>Comptable Pro | Comparatif des cabinets comptables en ligne</title>
     <meta
       name="description"
-      content="Découvrez un comparatif détaillé des cabinets comptables en ligne pour entrepreneurs : tarifs, services et points forts pour indy.fr, Dougs, Livli et plus."
+      content="Trouvez le cabinet comptable en ligne idéal grâce à notre comparatif détaillé, nos analyses et fiches dédiées aux principaux acteurs du marché."
     />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0a4a7c" />
-
+    <meta name="theme-color" content="#ff7aa2" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Comparatif des cabinets comptables en ligne" />
+    <meta property="og:title" content="Comptable Pro | Comparatif des cabinets comptables en ligne" />
     <meta
       property="og:description"
-      content="Choisissez le cabinet comptable en ligne adapté à votre structure grâce à notre analyse professionnelle."
+      content="Analyse indépendante, tableau comparatif et fiches cabinet pour choisir votre expert-comptable en ligne."
     />
     <meta property="og:url" content="https://example.com/" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:image" content="https://example.com/assets/images/hero-pattern.svg" />
-    <meta name="twitter:card" content="summary_large_image" />
-
+    <link rel="canonical" href="https://example.com/" />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="https://example.com/" />
   </head>
   <body>
-    <a href="#content" class="skip-link">Aller au contenu principal</a>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
-      <div class="header-inner" role="banner">
-        <nav aria-label="Navigation principale">
-          <a class="brand" href="#">
+      <div class="header-inner">
+        <div class="header-top">
+          <a class="brand" href="index.html">
             <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <rect x="2" y="2" width="44" height="44" rx="12" fill="rgba(255,255,255,0.18)" />
+              <rect x="2" y="2" width="44" height="44" rx="12" fill="rgba(255, 122, 162, 0.22)" />
               <path
                 d="M16 32l6-14 4 6 6-10"
-                stroke="#ffffff"
+                stroke="#ff7aa2"
                 stroke-width="3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -45,307 +42,349 @@
             </svg>
             Comptable Pro
           </a>
-          <ul>
-            <li><a href="#comparatif">Comparatif</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="hero" id="content">
-          <div class="hero-content">
-            <h1>Choisissez le cabinet comptable en ligne qui accélère votre croissance</h1>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+          <nav id="menu-principal" class="site-nav" aria-label="Navigation principale">
+            <ul>
+              <li class="menu-item has-submenu">
+                <button class="submenu-toggle" type="button" aria-expanded="false">Meilleurs comptables</button>
+                <ul class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="cabinets/indy.html">Indy</a></li>
+                  <li role="none"><a role="menuitem" href="cabinets/dougs.html">Dougs</a></li>
+                  <li role="none"><a role="menuitem" href="cabinets/keobiz.html">Keobiz</a></li>
+                  <li role="none"><a role="menuitem" href="cabinets/lexpert.html">L-expert-comptable.com</a></li>
+                  <li role="none"><a role="menuitem" href="cabinets/livli.html">Livli</a></li>
+                  <li role="none"><a role="menuitem" href="cabinets/clementine.html">Clémentine</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="les-moins-chers.html">Les moins chers</a></li>
+              <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero hero-home" id="contenu">
+          <div class="hero-copy">
+            <p class="eyebrow">Comparatif 2024</p>
+            <h1>Choisissez le cabinet comptable en ligne fait pour vous</h1>
             <p>
-              Nous analysons les acteurs clés du marché pour vous aider à sélectionner la solution qui répond à vos exigences
-              de réactivité, d’accompagnement et de conformité.
+              Nous auditons les plateformes les plus utilisées, analysons leurs tarifs et testons l'accompagnement pour vous
+              proposer des recommandations actionnables selon votre statut et votre secteur.
             </p>
-            <div class="hero-cta">
-              <a class="button button-primary" href="#comparatif">Explorer le comparatif</a>
-              <a class="button button-secondary" href="#contact">Obtenir un diagnostic</a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#comparatif">Comparer les cabinets</a>
+              <a class="button button-secondary" href="#methodologie">Voir notre méthode</a>
             </div>
+            <ul class="hero-points" role="list">
+              <li>6 cabinets passés au crible par nos experts</li>
+              <li>Notes mises à jour à chaque évolution tarifaire</li>
+              <li>Guides personnalisés pour freelances, TPE et e-commerçants</li>
+            </ul>
           </div>
-          <div class="hero-media">
-            <article class="hero-card" aria-label="Indicateurs clés">
-              <h2>Pourquoi nous faire confiance&nbsp;?</h2>
-              <ul>
-                <li>
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                    <path
-                      d="M5 13l4 4L19 7"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  +15 ans d’expertise en digitalisation comptable
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                    <path
-                      d="M12 5v14m7-7H5"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Analyse indépendante et transparente
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                    <path
-                      d="M3 12l2-2 4 4 10-10"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Recommandations adaptées à votre structure
-                </li>
-              </ul>
-            </article>
+          <div class="hero-card" aria-label="Résumé des promesses Comptable Pro">
+            <h2>Pourquoi Comptable Pro&nbsp;?</h2>
+            <p>
+              Un format clair, des analyses indépendantes et des offres négociées pour que votre expert-comptable devienne un
+              allié de croissance.
+            </p>
+            <ul role="list">
+              <li>Comparatif impartial validé par un comité d'experts</li>
+              <li>Benchmarks sectoriels et check-lists de migration</li>
+              <li>Accès direct aux offres partenaires et promotions exclusives</li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section aria-labelledby="section-services">
-        <div class="section-heading">
-          <h2 id="section-services">Un accompagnement stratégique pour les dirigeants</h2>
-          <p>
-            Notre équipe évalue les plateformes comptables selon des critères tangibles : qualité du conseil, profondeur des
-            intégrations logicielles, lisibilité tarifaire et conformité réglementaire.
+      <div class="page">
+        <section class="section" id="comparatif" aria-labelledby="titre-comparatif">
+              <h2 id="titre-comparatif">Tableau comparatif 2024 des cabinets comptables en ligne</h2>
+              <p class="lead">
+                Comparez en un coup d'œil le positionnement, les points forts et les forfaits des acteurs sélectionnés. Chaque
+                ligne donne accès à une fiche détaillée avec recommandations, avis clients et plan d'action.
+              </p>
+              <div class="comparison-table" role="region" aria-labelledby="titre-comparatif">
+                <table>
+                  <caption class="sr-only">Comparaison des cabinets comptables en ligne</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Cabinet</th>
+                      <th scope="col">Positionnement</th>
+                      <th scope="col">Atouts majeurs</th>
+                      <th scope="col">Tarifs indicatifs</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Indy</th>
+                      <td>Solution automatisée pour indépendants et professions libérales.</td>
+                      <td>
+                        <strong>Automatisation native</strong>
+                        <span class="badge">IA & Pilotage</span>
+                        Déclarations fiscales et TVA en quelques clics.
+                      </td>
+                      <td>Formule à partir de 49&nbsp;€&nbsp;HT/mois.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/indy.html">Notre avis sur Indy</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.indy.fr/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Dougs</th>
+                      <td>Cabinet 100&nbsp;% en ligne axé sur la pédagogie et la mobilité.</td>
+                      <td>
+                        <strong>Application complète</strong>
+                        <span class="badge badge-success">Temps réel</span>
+                        Tableaux de bord, alertes proactives et webinars mensuels.
+                      </td>
+                      <td>Essentiels à 79&nbsp;€&nbsp;HT/mois.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/dougs.html">Notre avis sur Dougs</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.dougs.fr/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Keobiz</th>
+                      <td>Accompagnement global pour créateurs et sociétés en croissance.</td>
+                      <td>
+                        <strong>Offre juridique intégrée</strong>
+                        <span class="badge badge-neutral">360°</span>
+                        Formalités et missions juridiques incluses.
+                      </td>
+                      <td>Abonnement dès 49&nbsp;€&nbsp;HT/mois.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/keobiz.html">Notre avis sur Keobiz</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.keobiz.fr/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">L-expert-comptable.com</th>
+                      <td>Cabinet digital historique avec forte expertise juridique.</td>
+                      <td>
+                        <strong>Ressources pédagogiques</strong>
+                        <span class="badge">Communauté</span>
+                        Webinaires, guides pratiques et club dirigeant.
+                      </td>
+                      <td>Forfaits sur-mesure à partir de 69&nbsp;€&nbsp;HT/mois.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/lexpert.html">Notre avis sur L-expert-comptable.com</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.l-expert-comptable.com/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Livli</th>
+                      <td>Spécialiste e-commerce et activités digitales.</td>
+                      <td>
+                        <strong>Intégrations API</strong>
+                        <span class="badge badge-success">E-commerce</span>
+                        Connexions Shopify, Amazon et marketplace.
+                      </td>
+                      <td>Formule Comfort à 79&nbsp;€&nbsp;HT/mois.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/livli.html">Notre avis sur Livli</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.livli.fr/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Clémentine</th>
+                      <td>Pilotage financier premium pour TPE/PME en croissance.</td>
+                      <td>
+                        <strong>Reporting actionnable</strong>
+                        <span class="badge badge-neutral">Conseil</span>
+                        Contrôleur de gestion et réunions trimestrielles.
+                      </td>
+                      <td>Pack croissance sur devis personnalisé.</td>
+                      <td>
+                        <div class="table-actions">
+                          <a class="button button-secondary" href="cabinets/clementine.html">Notre avis sur Clémentine</a>
+                          <a
+                            class="button button-ghost"
+                            href="https://www.clementine.pro/?utm_source=comptablepro&utm_medium=tableau"
+                            target="_blank"
+                            rel="noopener nofollow"
+                            >Visiter le site &raquo;</a
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="review-snippet">
+                <blockquote>
+                  «&nbsp;Grâce au comparatif Comptable Pro, nous avons identifié le cabinet capable d'automatiser nos flux
+                  Shopify et d'anticiper nos besoins de trésorerie. L'onboarding a été bouclé en deux semaines.&nbsp;»
+                </blockquote>
+                <cite>— Sarah M., fondatrice d'une DNVB</cite>
+              </div>
+        </section>
+
+        <section class="section" id="methodologie" aria-labelledby="titre-methodologie">
+          <h2 id="titre-methodologie">Comment nous sélectionnons les cabinets mis en avant</h2>
+          <p class="lead">
+            Chaque trimestre, nous analysons 24 critères regroupant l'accompagnement humain, la technologie proposée et la
+            transparence tarifaire. Nos recommandations varient selon votre statut, votre secteur et vos ambitions de
+            croissance.
           </p>
-        </div>
-        <div class="card-grid" role="list">
-          <article class="card" role="listitem">
-            <h3>Audit personnalisé</h3>
-            <p>
-              Nous passons au crible votre organisation actuelle pour identifier les leviers d’automatisation et de pilotage
-              financier.
-            </p>
-          </article>
-          <article class="card" role="listitem">
-            <h3>Mise en place accélérée</h3>
-            <p>
-              Bénéficiez d’un plan d’implémentation sur-mesure pour intégrer rapidement l’outil choisi à vos processus internes.
-            </p>
-          </article>
-          <article class="card" role="listitem">
-            <h3>Suivi et optimisation</h3>
-            <p>
-              Nos experts restent engagés pour mesurer l’adoption, optimiser les routines et sécuriser vos clôtures.
-            </p>
-          </article>
-        </div>
-      </section>
+          <div class="features-grid">
+            <article class="feature-card">
+              <h3>Accompagnement humain</h3>
+              <p>
+                Interlocuteur dédié, disponibilité de l'équipe, qualité du conseil stratégique et pédagogie sur vos obligations
+                quotidiennes.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Plateforme & automatisation</h3>
+              <p>
+                Synchronisation bancaire, intégrations e-commerce, tableaux de bord temps réel et connecteurs API pour
+                automatiser les tâches répétitives.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Lisibilité tarifaire</h3>
+              <p>
+                Transparence des forfaits, coût des missions complémentaires et inclusion des volets juridiques ou sociaux.
+              </p>
+            </article>
+          </div>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>92&nbsp;%</strong>
+              des dirigeants accompagnés améliorent leur pilotage de trésorerie en moins de 6&nbsp;mois.
+            </div>
+            <div class="stat">
+              <strong>35&nbsp;h</strong>
+              gagnées chaque année grâce à l'automatisation des écritures et relances.
+            </div>
+            <div class="stat">
+              <strong>0</strong>
+              retard constaté sur les obligations fiscales depuis 2022.
+            </div>
+          </div>
+        </section>
 
-      <section id="comparatif" class="comparison" aria-labelledby="section-comparatif">
-        <div class="section-heading">
-          <h2 id="section-comparatif">Comparatif des cabinets comptables en ligne</h2>
-          <p>Analyse multi-critères des solutions leaders du marché français.</p>
-        </div>
-        <div class="table-wrapper" role="region" aria-labelledby="section-comparatif">
-          <table>
-            <caption class="sr-only">Comparaison des cabinets comptables en ligne</caption>
-            <thead>
-              <tr>
-                <th scope="col">Cabinet</th>
-                <th scope="col">Positionnement</th>
-                <th scope="col">Forces</th>
-                <th scope="col">Points de vigilance</th>
-                <th scope="col">Offre phare</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">indy.fr</th>
-                <td>Solution automatisée pour indépendants et professions libérales.</td>
-                <td>
-                  <strong>Automatisation native</strong>
-                  <span class="badge badge-positive">IA</span>
-                  Import bancaire, déclarations fiscales et TVA en quelques clics.
-                </td>
-                <td>Support plus limité pour les structures sociétaires complexes.</td>
-                <td>Abonnement à partir de 49&nbsp;€&nbsp;HT/mois.</td>
-              </tr>
-              <tr>
-                <th scope="row">clementine.fr</th>
-                <td>Cabinet en ligne spécialisé TPE/PME avec pilotage financier.</td>
-                <td>
-                  <strong>Accompagnement humain</strong>
-                  <span class="badge badge-neutral">Conseil</span>
-                  Comptables dédiés et reporting mensuel inclus.
-                </td>
-                <td>Tarifs sur devis, visibilité tarifaire à clarifier.</td>
-                <td>Pack croissance (sur-mesure).</td>
-              </tr>
-              <tr>
-                <th scope="row">Keobiz</th>
-                <td>Cabinet digital pour créateurs et sociétés en croissance.</td>
-                <td>
-                  <strong>Offre juridique intégrée</strong>
-                  <span class="badge badge-positive">360°</span>
-                  Formalités et accompagnement création d’entreprise.
-                </td>
-                <td>Options additionnelles parfois nécessaires pour l’accompagnement premium.</td>
-                <td>Abonnement dès 49&nbsp;€&nbsp;HT/mois.</td>
-              </tr>
-              <tr>
-                <th scope="row">Dougs</th>
-                <td>Cabinet 100&nbsp;% en ligne axé automatisation et pédagogie.</td>
-                <td>
-                  <strong>Application mobile</strong>
-                  <span class="badge badge-positive">Temps réel</span>
-                  Tableaux de bord et alertes proactives.
-                </td>
-                <td>Disponibilité des conseillers à planifier sur plages définies.</td>
-                <td>Formule Essentials à 79&nbsp;€&nbsp;HT/mois.</td>
-              </tr>
-              <tr>
-                <th scope="row">l-expert-comptable.com</th>
-                <td>Cabinet digital avec forte expertise juridique et fiscale.</td>
-                <td>
-                  <strong>Ressources pédagogiques</strong>
-                  <span class="badge badge-positive">Blog</span>
-                  Webinaires et guides pratiques pour dirigeants.
-                </td>
-                <td>Plateforme parfois dense pour les nouveaux utilisateurs.</td>
-                <td>Pack création + accompagnement comptable.</td>
-              </tr>
-              <tr>
-                <th scope="row">legalplace</th>
-                <td>Plateforme juridique élargie offrant un service comptable.</td>
-                <td>
-                  <strong>Centralisation administrative</strong>
-                  <span class="badge badge-neutral">Plateforme</span>
-                  Formalités juridiques et modèles de documents inclus.
-                </td>
-                <td>Approche comptable moins personnalisée pour la gestion quotidienne.</td>
-                <td>Offre entrepreneurs (tarif modulable).</td>
-              </tr>
-              <tr>
-                <th scope="row">acasi</th>
-                <td>Cabinet en ligne dédié aux freelances et consultants.</td>
-                <td>
-                  <strong>Expérience utilisateur soignée</strong>
-                  <span class="badge badge-positive">UX</span>
-                  Interface intuitive et tutoriels contextualisés.
-                </td>
-                <td>Moins adapté aux sociétés à forte volumétrie comptable.</td>
-                <td>Abonnement mensuel dès 59&nbsp;€&nbsp;HT.</td>
-              </tr>
-              <tr>
-                <th scope="row">socic</th>
-                <td>Cabinet hybride avec bureaux physiques et outils digitaux.</td>
-                <td>
-                  <strong>Proximité régionale</strong>
-                  <span class="badge badge-neutral">Réseau</span>
-                  Experts dédiés par territoire et secteurs spécialisés.
-                </td>
-                <td>Moins de fonctionnalités natives dans l’application en ligne.</td>
-                <td>Contrat sur devis selon le secteur.</td>
-              </tr>
-              <tr>
-                <th scope="row">Wity</th>
-                <td>Offre 360° comptabilité, juridique et conseil stratégique.</td>
-                <td>
-                  <strong>Pilotage financier</strong>
-                  <span class="badge badge-positive">BI</span>
-                  Reporting consolidé et indicateurs personnalisés.
-                </td>
-                <td>Structure tarifaire modulaire à analyser selon vos besoins.</td>
-                <td>Pack Starter TPE/PME.</td>
-              </tr>
-              <tr>
-                <th scope="row">Ça compte pour moi</th>
-                <td>Cabinet 100&nbsp;% en ligne avec service client étendu.</td>
-                <td>
-                  <strong>Disponibilité élargie</strong>
-                  <span class="badge badge-positive">Support</span>
-                  Conseillers joignables du lundi au samedi.
-                </td>
-                <td>Automatisation moins poussée que certains concurrents.</td>
-                <td>Formule sérénité à 69&nbsp;€&nbsp;HT/mois.</td>
-              </tr>
-              <tr>
-                <th scope="row">Livli</th>
-                <td>Cabinet en ligne pour entrepreneurs et e-commerçants.</td>
-                <td>
-                  <strong>Intégrations e-commerce</strong>
-                  <span class="badge badge-positive">API</span>
-                  Connexions Shopify, Amazon et marketplace.
-                </td>
-                <td>Accompagnement stratégique en option.</td>
-                <td>Formule Comfort à 79&nbsp;€&nbsp;HT/mois.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <section class="section" id="faq" aria-labelledby="titre-faq">
+              <h2 id="titre-faq">Questions fréquentes</h2>
+              <div class="faq-list">
+                <article class="faq-item">
+                  <h3>Combien de temps pour basculer vers un cabinet en ligne&nbsp;?</h3>
+                  <p>
+                    Les cabinets digitalisés finalisent l'onboarding entre 10 et 20 jours ouvrés selon la récupération des
+                    pièces et la reprise de la comptabilité historique.
+                  </p>
+                </article>
+                <article class="faq-item">
+                  <h3>Peut-on conserver un interlocuteur dédié&nbsp;?</h3>
+                  <p>
+                    Oui. Tous les cabinets comparés proposent au minimum un expert-comptable référent. Nous vérifions les
+                    plages de disponibilité, les SLA de réponse et la présence de réunions de pilotage.
+                  </p>
+                </article>
+                <article class="faq-item">
+                  <h3>Comment sont calculés vos scores&nbsp;?</h3>
+                  <p>
+                    Notre grille agrège les avis vérifiés, les fonctionnalités natives, le coût total de possession et les
+                    retours de nos clients accompagnés. Chaque cabinet est re-noté à chaque mise à jour majeure.
+                  </p>
+                </article>
+              </div>
+        </section>
 
-      <section class="faq" id="faq" aria-labelledby="section-faq">
-        <div class="section-heading">
-          <h2 id="section-faq">Questions fréquentes</h2>
-          <p>Clarifiez vos interrogations avant de sélectionner votre cabinet.</p>
-        </div>
-        <div class="faq-list" role="list">
-          <article class="faq-item" role="listitem">
-            <h3>Quel est le délai moyen d’onboarding&nbsp;?</h3>
-            <p>
-              Les plateformes entièrement digitalisées permettent une mise en route en 7 à 15 jours selon la migration de vos
-              écritures et la complexité de votre activité.
-            </p>
-          </article>
-          <article class="faq-item" role="listitem">
-            <h3>Comment comparer les offres tarifaires&nbsp;?</h3>
-            <p>
-              Analysez le périmètre inclus (déclarations fiscales, bilan, paie, juridique) et identifiez les coûts additionnels
-              pour les prestations ponctuelles (assemblées, commissariat, conseil social).
-            </p>
-          </article>
-          <article class="faq-item" role="listitem">
-            <h3>Quelle importance pour l’accompagnement humain&nbsp;?</h3>
-            <p>
-              Même avec une forte automatisation, privilégiez un interlocuteur dédié capable de vous alerter sur les impacts
-              fiscaux et d’adapter les paramétrages aux évolutions réglementaires.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="cta" id="contact" aria-labelledby="section-cta">
-        <div class="section-heading">
-          <h2 id="section-cta">Prêt à accélérer votre pilotage financier&nbsp;?</h2>
+        <section class="section cta-banner" id="contact" aria-labelledby="titre-contact">
+          <h2 id="titre-contact">Besoin d'un diagnostic personnalisé&nbsp;?</h2>
           <p>
-            Réservez une session de diagnostic offerte avec un expert Comptable Pro pour aligner vos objectifs business et votre
-            organisation comptable.
+            Décrivez votre activité, votre volumétrie et vos attentes. Nous vous rappelons sous 72&nbsp;heures avec une
+            shortlist de cabinets adaptés et un plan de migration.
           </p>
-          <a class="button button-primary" href="mailto:contact@example.com">Planifier un échange</a>
-        </div>
-      </section>
+          <a class="button button-primary" href="mailto:contact@example.com">Écrire à un expert Comptable Pro</a>
+        </section>
+      </div>
     </main>
 
     <footer>
       <div class="footer-inner">
-        <p>&copy; <span id="year">2024</span> Comptable Pro. Tous droits réservés.</p>
-        <nav aria-label="Navigation pied de page">
-          <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Préférences cookies</a></li>
-          </ul>
-        </nav>
+        <p>&copy; <span id="annee">2024</span> Comptable Pro. Comparatif indépendant des cabinets comptables en ligne.</p>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Paramètres cookies</a></li>
+        </ul>
       </div>
     </footer>
     <script>
-      const year = new Date().getFullYear();
-      const yearHolder = document.getElementById("year");
-      if (yearHolder) {
-        yearHolder.textContent = year;
+      const annee = document.getElementById("annee");
+      if (annee) {
+        annee.textContent = new Date().getFullYear();
       }
+
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+      if (navToggle && siteNav) {
+        navToggle.addEventListener("click", () => {
+          const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!isExpanded));
+          siteNav.classList.toggle("is-open", !isExpanded);
+        });
+
+        siteNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (window.innerWidth < 960 && siteNav.classList.contains("is-open")) {
+              siteNav.classList.remove("is-open");
+              navToggle.setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+      }
+
+      document.querySelectorAll(".submenu-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const isExpanded = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", String(!isExpanded));
+          button.parentElement?.classList.toggle("is-open", !isExpanded);
+        });
+      });
     </script>
   </body>
 </html>
