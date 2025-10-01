@@ -24,7 +24,7 @@
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="homepage">
     <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
       <div class="header-inner">
@@ -46,122 +46,199 @@
             <ul>
               <li><a href="#comparatif">Comparatif</a></li>
               <li><a href="#methodologie">Méthodologie</a></li>
+              <li class="has-submenu">
+                <button type="button" class="submenu-toggle" aria-expanded="false" aria-haspopup="true">
+                  Fiches cabinets
+                  <span class="chevron" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu" hidden>
+                  <li><a href="cabinets/indy.html">Indy</a></li>
+                  <li><a href="cabinets/dougs.html">Dougs</a></li>
+                  <li><a href="cabinets/keobiz.html">Keobiz</a></li>
+                  <li><a href="cabinets/lexpert.html">L-expert-comptable.com</a></li>
+                  <li><a href="cabinets/livli.html">Livli</a></li>
+                  <li><a href="cabinets/clementine.html">Clémentine</a></li>
+                </ul>
+              </li>
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div class="hero hero-home" id="contenu">
-          <h1>Comparez les cabinets comptables en un clin d'œil</h1>
-          <p>
-            Une introduction claire, un tableau synthétique et des fiches détaillées pour choisir l'expert-comptable en ligne
-            qui vous ressemble.
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                d="M12 3l2 3.9 4.4.64-3.2 3.12.76 4.35L12 13.77 7.99 15.01l.76-4.35-3.2-3.12L10 6.9 12 3z"
+                fill="currentColor"
+              />
+            </svg>
+            Édition indépendante 2024
+          </span>
+          <h1>Le comparatif de cabinets comptables en ligne à garder sous la main</h1>
+          <p class="hero-lead">
+            Notre équipe teste les solutions, vérifie les avis et négocie les offres pour vous proposer un panorama clair et
+            humain. Le tableau comparatif reste la porte d'entrée principale pour choisir sereinement votre expert-comptable.
           </p>
-          <div class="hero-cta">
-            <a class="button button-primary" href="#comparatif">Voir le comparatif 2024</a>
+          <div class="hero-focus-card">
+            <div class="hero-focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="6" width="22" height="16" rx="3" fill="currentColor" opacity="0.14" />
+                <path
+                  d="M8 11h12M8 14h12M8 17h7"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="hero-focus-content">
+              <p>
+                <strong>Le tableau comparatif</strong> met face à face tarifs, positionnement et accompagnement sur 24 critères
+                objectivés.
+              </p>
+              <a class="button button-primary" href="#comparatif">Consulter le tableau comparatif</a>
+            </div>
           </div>
-          <p class="hero-note">Scores mis à jour, avis clients vérifiés et offres négociées pour freelances, TPE et e-commerçants.</p>
+          <ul class="hero-checklist" role="list">
+            <li>
+              <span class="hero-check-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 8.5l3 3 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </span>
+              Scores mis à jour chaque trimestre à partir des retours dirigeants et des roadmaps produits.
+            </li>
+            <li>
+              <span class="hero-check-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 8.5l3 3 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </span>
+              Fiches cabinets enrichies : cas d'usage, limites et conseils pour onboarder rapidement.
+            </li>
+            <li>
+              <span class="hero-check-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 8.5l3 3 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </span>
+              Accompagnement neutre pour comparer les devis et préparer votre migration comptable.
+            </li>
+          </ul>
+          <div class="hero-trust">
+            <div class="hero-trust-figure">
+              <strong>312</strong>
+              <span>dirigeants accompagnés en 2023</span>
+            </div>
+            <p>Notes vérifiées, offres négociées et plan d'intégration personnalisé offert.</p>
+          </div>
+          <div class="hero-cta">
+            <a class="button button-secondary" href="#methodologie">Comprendre notre méthodologie</a>
+            <a class="button button-ghost" href="#contact">Parler à un expert</a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <div class="page">
-        <section class="section" id="comparatif" aria-labelledby="titre-comparatif">
-              <h2 id="titre-comparatif">Tableau comparatif 2024 des cabinets comptables en ligne</h2>
-              <p class="lead">
-                Comparez en un coup d'œil le positionnement, les points forts et les forfaits des acteurs sélectionnés. Chaque
-                ligne donne accès à une fiche détaillée avec recommandations, avis clients et plan d'action.
-              </p>
-              <div class="comparison-table" role="region" aria-labelledby="titre-comparatif">
-                <table>
-                  <caption class="sr-only">Comparaison des cabinets comptables en ligne</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">Cabinet</th>
-                      <th scope="col">Positionnement</th>
-                      <th scope="col">Atouts majeurs</th>
-                      <th scope="col">Tarifs indicatifs</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Indy</th>
-                      <td>Solution automatisée pour indépendants et professions libérales.</td>
-                      <td>
-                        <strong>Automatisation native</strong>
-                        <span class="badge">IA & Pilotage</span>
-                        Déclarations fiscales et TVA en quelques clics.
-                      </td>
-                      <td>Formule à partir de 49&nbsp;€&nbsp;HT/mois.</td>
-                      <td><a class="cta-link" href="cabinets/indy.html">Voir l'analyse</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Dougs</th>
-                      <td>Cabinet 100&nbsp;% en ligne axé sur la pédagogie et la mobilité.</td>
-                      <td>
-                        <strong>Application complète</strong>
-                        <span class="badge badge-success">Temps réel</span>
-                        Tableaux de bord, alertes proactives et webinars mensuels.
-                      </td>
-                      <td>Essentiels à 79&nbsp;€&nbsp;HT/mois.</td>
-                      <td><a class="cta-link" href="cabinets/dougs.html">Voir l'analyse</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Keobiz</th>
-                      <td>Accompagnement global pour créateurs et sociétés en croissance.</td>
-                      <td>
-                        <strong>Offre juridique intégrée</strong>
-                        <span class="badge badge-neutral">360°</span>
-                        Formalités et missions juridiques incluses.
-                      </td>
-                      <td>Abonnement dès 49&nbsp;€&nbsp;HT/mois.</td>
-                      <td><a class="cta-link" href="cabinets/keobiz.html">Voir l'analyse</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">L-expert-comptable.com</th>
-                      <td>Cabinet digital historique avec forte expertise juridique.</td>
-                      <td>
-                        <strong>Ressources pédagogiques</strong>
-                        <span class="badge">Communauté</span>
-                        Webinaires, guides pratiques et club dirigeant.
-                      </td>
-                      <td>Forfaits sur-mesure à partir de 69&nbsp;€&nbsp;HT/mois.</td>
-                      <td><a class="cta-link" href="cabinets/lexpert.html">Voir l'analyse</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Livli</th>
-                      <td>Spécialiste e-commerce et activités digitales.</td>
-                      <td>
-                        <strong>Intégrations API</strong>
-                        <span class="badge badge-success">E-commerce</span>
-                        Connexions Shopify, Amazon et marketplace.
-                      </td>
-                      <td>Formule Comfort à 79&nbsp;€&nbsp;HT/mois.</td>
-                      <td><a class="cta-link" href="cabinets/livli.html">Voir l'analyse</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Clémentine</th>
-                      <td>Pilotage financier premium pour TPE/PME en croissance.</td>
-                      <td>
-                        <strong>Reporting actionnable</strong>
-                        <span class="badge badge-neutral">Conseil</span>
-                        Contrôleur de gestion et réunions trimestrielles.
-                      </td>
-                      <td>Pack croissance sur devis personnalisé.</td>
-                      <td><a class="cta-link" href="cabinets/clementine.html">Voir l'analyse</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="review-snippet">
-                <blockquote>
-                  «&nbsp;Grâce au comparatif Comptable Pro, nous avons identifié le cabinet capable d'automatiser nos flux
-                  Shopify et d'anticiper nos besoins de trésorerie. L'onboarding a été bouclé en deux semaines.&nbsp;»
-                </blockquote>
-                <cite>— Sarah M., fondatrice d'une DNVB</cite>
-              </div>
+        <section class="section section--accent" id="comparatif" aria-labelledby="titre-comparatif">
+          <h2 id="titre-comparatif">Tableau comparatif 2024 des cabinets comptables en ligne</h2>
+          <p class="lead">
+            Comparez en un coup d'œil le positionnement, les points forts et les forfaits des acteurs sélectionnés. Chaque ligne
+            donne accès à une fiche détaillée avec recommandations, avis clients et plan d'action.
+          </p>
+          <div class="comparison-table" role="region" aria-labelledby="titre-comparatif">
+            <table>
+              <caption class="sr-only">Comparaison des cabinets comptables en ligne</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Cabinet</th>
+                  <th scope="col">Positionnement</th>
+                  <th scope="col">Atouts majeurs</th>
+                  <th scope="col">Tarifs indicatifs</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Indy</th>
+                  <td>Solution automatisée pour indépendants et professions libérales.</td>
+                  <td>
+                    <strong>Automatisation native</strong>
+                    <span class="badge">IA & Pilotage</span>
+                    Déclarations fiscales et TVA en quelques clics.
+                  </td>
+                  <td>Formule à partir de 49&nbsp;€&nbsp;HT/mois.</td>
+                  <td><a class="cta-link" href="cabinets/indy.html">Voir l'analyse</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dougs</th>
+                  <td>Cabinet 100&nbsp;% en ligne axé sur la pédagogie et la mobilité.</td>
+                  <td>
+                    <strong>Application complète</strong>
+                    <span class="badge badge-success">Temps réel</span>
+                    Tableaux de bord, alertes proactives et webinars mensuels.
+                  </td>
+                  <td>Essentiels à 79&nbsp;€&nbsp;HT/mois.</td>
+                  <td><a class="cta-link" href="cabinets/dougs.html">Voir l'analyse</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Keobiz</th>
+                  <td>Accompagnement global pour créateurs et sociétés en croissance.</td>
+                  <td>
+                    <strong>Offre juridique intégrée</strong>
+                    <span class="badge badge-neutral">360°</span>
+                    Formalités et missions juridiques incluses.
+                  </td>
+                  <td>Abonnement dès 49&nbsp;€&nbsp;HT/mois.</td>
+                  <td><a class="cta-link" href="cabinets/keobiz.html">Voir l'analyse</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">L-expert-comptable.com</th>
+                  <td>Cabinet digital historique avec forte expertise juridique.</td>
+                  <td>
+                    <strong>Ressources pédagogiques</strong>
+                    <span class="badge">Communauté</span>
+                    Webinaires, guides pratiques et club dirigeant.
+                  </td>
+                  <td>Forfaits sur-mesure à partir de 69&nbsp;€&nbsp;HT/mois.</td>
+                  <td><a class="cta-link" href="cabinets/lexpert.html">Voir l'analyse</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Livli</th>
+                  <td>Spécialiste e-commerce et activités digitales.</td>
+                  <td>
+                    <strong>Intégrations API</strong>
+                    <span class="badge badge-success">E-commerce</span>
+                    Connexions Shopify, Amazon et marketplace.
+                  </td>
+                  <td>Formule Comfort à 79&nbsp;€&nbsp;HT/mois.</td>
+                  <td><a class="cta-link" href="cabinets/livli.html">Voir l'analyse</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Clémentine</th>
+                  <td>Pilotage financier premium pour TPE/PME en croissance.</td>
+                  <td>
+                    <strong>Reporting actionnable</strong>
+                    <span class="badge badge-neutral">Conseil</span>
+                    Contrôleur de gestion et réunions trimestrielles.
+                  </td>
+                  <td>Pack croissance sur devis personnalisé.</td>
+                  <td><a class="cta-link" href="cabinets/clementine.html">Voir l'analyse</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="review-snippet">
+            <blockquote>
+              «&nbsp;Grâce au comparatif Comptable Pro, nous avons identifié le cabinet capable d'automatiser nos flux Shopify et
+              d'anticiper nos besoins de trésorerie. L'onboarding a été bouclé en deux semaines.&nbsp;»
+            </blockquote>
+            <cite>— Sarah M., fondatrice d'une DNVB</cite>
+          </div>
         </section>
 
         <section class="section" id="methodologie" aria-labelledby="titre-methodologie">
@@ -209,7 +286,7 @@
           </div>
         </section>
 
-        <section class="section" id="faq" aria-labelledby="titre-faq">
+        <section class="section section--soft" id="faq" aria-labelledby="titre-faq">
               <h2 id="titre-faq">Questions fréquentes</h2>
               <div class="faq-list">
                 <article class="faq-item">
@@ -261,6 +338,78 @@
       const annee = document.getElementById("annee");
       if (annee) {
         annee.textContent = new Date().getFullYear();
+      }
+
+      const submenuWrappers = Array.from(document.querySelectorAll(".has-submenu"));
+      if (submenuWrappers.length) {
+        const closeWrapper = (wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+          submenu.hidden = true;
+          toggle.setAttribute("aria-expanded", "false");
+          wrapper.classList.remove("is-open");
+        };
+
+        const openWrapper = (wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+          submenu.hidden = false;
+          toggle.setAttribute("aria-expanded", "true");
+          wrapper.classList.add("is-open");
+        };
+
+        const closeAll = () => {
+          submenuWrappers.forEach((wrapper) => closeWrapper(wrapper));
+        };
+
+        submenuWrappers.forEach((wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+
+          toggle.setAttribute("aria-haspopup", "true");
+
+          toggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            const expanded = toggle.getAttribute("aria-expanded") === "true";
+            closeAll();
+            if (!expanded) {
+              openWrapper(wrapper);
+            }
+          });
+
+          wrapper.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+              closeWrapper(wrapper);
+              toggle.focus();
+            }
+
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              if (toggle.getAttribute("aria-expanded") !== "true") {
+                openWrapper(wrapper);
+              }
+              const firstLink = submenu.querySelector("a");
+              if (firstLink) {
+                firstLink.focus();
+              }
+            }
+          });
+
+          wrapper.addEventListener("focusout", (event) => {
+            if (!wrapper.contains(event.relatedTarget)) {
+              closeWrapper(wrapper);
+            }
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!submenuWrappers.some((wrapper) => wrapper.contains(event.target))) {
+            closeAll();
+          }
+        });
       }
     </script>
   </body>

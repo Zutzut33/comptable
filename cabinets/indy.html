@@ -34,6 +34,20 @@
             <ul>
               <li><a href="../index.html#comparatif">Comparatif</a></li>
               <li><a href="../index.html#methodologie">Méthodologie</a></li>
+              <li class="has-submenu">
+                <button type="button" class="submenu-toggle" aria-expanded="false" aria-haspopup="true">
+                  Fiches cabinets
+                  <span class="chevron" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu" hidden>
+                  <li><a href="indy.html">Indy</a></li>
+                  <li><a href="dougs.html">Dougs</a></li>
+                  <li><a href="keobiz.html">Keobiz</a></li>
+                  <li><a href="lexpert.html">L-expert-comptable.com</a></li>
+                  <li><a href="livli.html">Livli</a></li>
+                  <li><a href="clementine.html">Clémentine</a></li>
+                </ul>
+              </li>
               <li><a href="../index.html#faq">FAQ</a></li>
               <li><a href="../index.html#contact">Contact</a></li>
             </ul>
@@ -231,6 +245,78 @@
       const annee = document.getElementById("annee");
       if (annee) {
         annee.textContent = new Date().getFullYear();
+      }
+
+      const submenuWrappers = Array.from(document.querySelectorAll(".has-submenu"));
+      if (submenuWrappers.length) {
+        const closeWrapper = (wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+          submenu.hidden = true;
+          toggle.setAttribute("aria-expanded", "false");
+          wrapper.classList.remove("is-open");
+        };
+
+        const openWrapper = (wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+          submenu.hidden = false;
+          toggle.setAttribute("aria-expanded", "true");
+          wrapper.classList.add("is-open");
+        };
+
+        const closeAll = () => {
+          submenuWrappers.forEach((wrapper) => closeWrapper(wrapper));
+        };
+
+        submenuWrappers.forEach((wrapper) => {
+          const toggle = wrapper.querySelector(".submenu-toggle");
+          const submenu = wrapper.querySelector(".submenu");
+          if (!toggle || !submenu) return;
+
+          toggle.setAttribute("aria-haspopup", "true");
+
+          toggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            const expanded = toggle.getAttribute("aria-expanded") === "true";
+            closeAll();
+            if (!expanded) {
+              openWrapper(wrapper);
+            }
+          });
+
+          wrapper.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+              closeWrapper(wrapper);
+              toggle.focus();
+            }
+
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              if (toggle.getAttribute("aria-expanded") !== "true") {
+                openWrapper(wrapper);
+              }
+              const firstLink = submenu.querySelector("a");
+              if (firstLink) {
+                firstLink.focus();
+              }
+            }
+          });
+
+          wrapper.addEventListener("focusout", (event) => {
+            if (!wrapper.contains(event.relatedTarget)) {
+              closeWrapper(wrapper);
+            }
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!submenuWrappers.some((wrapper) => wrapper.contains(event.target))) {
+            closeAll();
+          }
+        });
       }
     </script>
   </body>
